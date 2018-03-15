@@ -262,7 +262,6 @@ final class xajax
 		// this is the list of folders where xajax will look for plugins
 		// that will be automatically included at startup.
 		$aPluginFolders = array();
-		$aPluginFolders[] = dirname($sLocalFolder) . '/xajax_plugins';
 		
 //SkipAIO
 		$aPluginFolders[] = $sLocalFolder . '/plugin_layer';
