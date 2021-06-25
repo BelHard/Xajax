@@ -244,7 +244,7 @@ final class xajaxArgumentManager
 			$this->nMethod = XAJAX_METHOD_GET;
 			$this->aArgs = $_GET['xjxargs'];
 		}
-		if (1 == get_magic_quotes_gpc())
+		if (function_exists("get_magic_quotes_gpc") && get_magic_quotes_gpc())
 			array_walk($this->aArgs, array(&$this, '__argumentStripSlashes'));
 			
 
